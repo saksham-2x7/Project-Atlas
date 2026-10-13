@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Atlas - Developer Profile Card</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-color: #38bdf8;
+      --accent-hover: #0284c7;
+      --tag-bg: #334155;
+      --border-color: #475569;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 440px;
+    }
+
+    .badge-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge-header h1 {
+      font-size: 1.25rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      font-weight: 700;
+    }
+
+    .profile-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2.25rem 2rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 1.25rem;
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #0f172a;
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
+    }
+
+    .name {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .role {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .intro {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin-bottom: 1.75rem;
+    }
+
+    .skills-section {
+      margin-bottom: 2rem;
+    }
+
+    .skills-heading {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .skill-tag {
+      background-color: var(--tag-bg);
+      color: #e2e8f0;
+      font-size: 0.825rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+    }
+
+    .portfolio-link {
+      display: inline-block;
+      background-color: var(--accent-color);
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 8px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .portfolio-link:hover {
+      background-color: var(--accent-hover);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="badge-header">
+      <h1>Project Atlas Team</h1>
+    </header>
+
+    <main>
+      <article class="profile-card">
+        <div class="avatar">SS</div>
+        <h2 class="name">Saksham Singh</h2>
+        <p class="role">Full Stack Developer</p>
+        <p class="intro">
+          Passionate software engineer building high-performance web applications, 
+          scalable backend microservices, and interactive developer experiences for Project Atlas.
+        </p>
+
+        <section class="skills-section">
+          <h3 class="skills-heading">Core Skills</h3>
+          <ul class="skills-list">
+            <li class="skill-tag">Frontend &amp; TypeScript</li>
+            <li class="skill-tag">Python &amp; Systems</li>
+            <li class="skill-tag">WebGL &amp; Three.js</li>
+          </ul>
+        </section>
+
+        <div class="actions">
+          <a href="https://github.com/saksham-2x7" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            GitHub Portfolio
+          </a>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
